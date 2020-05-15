@@ -21,7 +21,7 @@ public class LocationService {
 
     public JSONObject getRoute(String strOrigin, String strDestination) {
         JSONParser parser = new JSONParser();
-        JSONObject jsonObject =  ;
+        JSONObject jsonObject =  null;
 
         try {
         URL url = new URL("https://maps.googleapis.com/maps/api/directions/json?origin=" + strOrigin + "&destination=" + strDestination + "&key=AIzaSyBOifYHXd8otXfFDV9ZrzPEVj3Vmq_F1-E");
